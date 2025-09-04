@@ -1,0 +1,29 @@
+COMMENTS:
+1. Customer LAN NVM update package for AOC-STGF-i2S that uses XL710 and supports NCSI.
+2. See Instruction.txt.
+
+EEPROM REVISION INFO:
+5) STGF2S4A_NUP (10/21/2022)
+	a. v9.00 firmware SMC_AOC-STGF-i2S_XL710_9p00_SFI_NCSI_CFGID7p2_Dual_ASPM_DIS_0.00_8000D299.bin from IPS 00726018.
+	b. Included PXE + EFI OROM from PXE3256.
+	c. Using nvmupdate64e from 700Series_NVMUpdatePackage_v9_00.
+
+4) STGF2S40_NUP (7/21/2021) 
+	a. FW v8.30 SMC_AOC_XL710_8p30_SFI_NCSI_CFGID7p2_Dual_ASPM_DIS_8000AB72.bin from IPS 00597028
+	b. Included BootIMG.FLB PXE + EFI OROM from PXE2926.
+
+3) STGF2S3C_NUP (1/27/2021) 
+	a. FW v8.20 ETrackID 80009DF0.
+	b. NVM is included PXE2879.
+
+2) STGF2S3B2_NUP (11/23/2020)
+	a. Manually overwrite port swap setting in map files (this fixes timestamp issue).
+
+1a) STGF2S3B_NUP (10/30/2020)
+	a. Added BootIMG.FLB from PXE2585 to show correct PXE version. 
+	b. Changed nvmupdate tool to v1.34.22.6 from software release 25.0 to match with v7.20 FW.  
+
+1) STGF2S3B_NUP (5/4/2020) 
+	a. NUP package for both Linux and UEFI based on FW v7.20 ETrackID 800082B6.
+	b. Included PXE2585. 
+
