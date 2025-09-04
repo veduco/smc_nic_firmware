@@ -1,3 +1,3 @@
 @echo -off
 
-nvmupdate64e.efi -u -f -l -c nvmupdate.cfg
+nvmupdate64e.efi -b -u -f -l -c nvmupdate.cfg
