@@ -1,0 +1,9 @@
+COMMENTS:
+1. This NVM update package is for X10SRM-TF that uses 10G X550-BT2 (25x25) with NCSI.
+2. See Instruction.txt.   
+
+EEPROM REVISION INFO:
+1) SRM2B_NUP (2/3/2022) - For 10G X550 LAN (X10SRM-TF)
+	a. FW v3.50 dSGVL_B0_BT2_NCSI_3p50.bin ETrackID 800016E2 from X550_NVMUpdatePackage_v3_50_EFI
+	b. Included OROM PXE + EFI from PXE3082-1.
+	c. Added -sv (skip verification) option to update script.

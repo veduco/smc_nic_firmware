@@ -1,0 +1,14 @@
+Steps to flash LAN EEPROM
+
+UEFI
+1. Extract the files and copy them to a USB. 
+2. Boot up UEFI Shell with USB plugged in.
+3. Go to your USB "fs0:".
+4. Run "FWUpdate.nsh".
+5. AC off/on.
+
+Linux
+1. Make sure to have administrator privileges. 
+2. If FWUpdate.sh and nvmupdate64e are NOT executeable, run "chmod +x FWUpdate.sh nvmupdate64e".
+3. Run "./FWUpdate.sh".
+4. Shutdown and then AC off-on.
