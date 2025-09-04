@@ -1,0 +1,17 @@
+
+Image versions in BootIMG.FLB
+
+    Combo Image Version Name 1.3863.0
+
+    Combo Rules                    v5.12.00
+    Intel(R) Boot Agent GE         v1.5.90
+    Intel(R) Boot Agent XE         v2.4.59
+    Intel(R) Boot Agent XE (X550)  v2.4.59
+    Intel(R) Boot Agent XE (E610)  v2.4.59
+    Intel(R) Boot Agent I40E       v1.1.45
+    Intel(R) Boot Agent ICE        v2.6.31
+    UEFI x64 PCI-E gigabit driver  v9.8.92
+    UEFI x64 10 gigabit driver     v8.2.96
+    UEFI x64 40 gigabit driver     v5.0.22
+    Intel(R) 800 Series Ethernet Driver v4.3.70
+    Intel(R) 800 Series Ethernet Driver (AArch64) v4.3.70
