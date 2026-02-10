@@ -9,4 +9,4 @@ The firmwares in this repository were sourced from SMC.
 After many attempts, it does not seem possible to crossflash this card to native INTC firmware.  
 
 [Product Manual](https://www.supermicro.com/manuals/other/AOC-STGF-i2S.pdf)  
-![AOC-STGF-i2S](https://techmikeny.com/cdn/shop/files/q_9f82a538-0758-42f3-994a-ce6d7a8be409_1024x1024@2x.jpg?v=1756611035)  
+![AOC-STGF-i2S](https://d3fgzrxy6svisv.archive.is/OQoie/3656d026d712825c6205e9fa747b5157460f8534.webp)  
