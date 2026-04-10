@@ -1,0 +1,35 @@
+COMMENTS:
+
+Option ROM for E810, X772, X/XL/XXV710, X540, X552, X550 and all AOC using Intel LAN Controller.
+
+***For FCOE please use PXE2527 (this is the last package that supports FCOE)***
+
+UEFI:
+- Use PXE.nsh to flash the PXE and EFI Option ROM boot.
+
+Linux:
+- Make sure login as root and run ./install in the Driver directory.
+- Make sure all *.sh has executable permission.
+- Use PXE.sh to flash the PXE and EFI Option ROM boot.
+
+Usage: To flash PXE to LAN1 run "PXE 1".
+
+
+1) 1/18/2024 from Intel S/W release 28.3
+    - For FCOE please use PXE2527 (this is the last package that supports FCOE). 
+
+Image versions in BootIMG.FLB
+
+    Combo Image Version Name 1.3534.0
+
+    Combo Rules                    v4.99.00
+    Intel(R) Boot Agent GE         v1.5.90
+    Intel(R) Boot Agent XE         v2.4.54
+    Intel(R) Boot Agent XE (X550)  v2.4.54
+    Intel(R) Boot Agent I40E       v1.1.45
+    Intel(R) Boot Agent CL         v0.1.16
+    Intel(R) Boot Agent ICE        v2.6.02
+    UEFI x64 PCI-E gigabit driver  v9.8.40
+    UEFI x64 10 gigabit driver     v8.2.31
+    UEFI x64 40 gigabit driver     v4.9.92
+    Intel(R) 800 Series Ethernet Driver v4.1.23
