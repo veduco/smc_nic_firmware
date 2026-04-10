@@ -1,0 +1,60 @@
+COMMENTS:
+1. This LAN NVM update package is for AOC-STG-i4S using XL710 LAN controller.
+2. See Instruction.txt.
+
+EEPROM REVISION INFO:
+6) STGi4S_20240805_9-40_NUP (8/5/2024) - v9.40 NVM from IPS 00884726
+	a. v9.40 firmware SMC_AOC-STG-i4S_XL710_9p40_SFI_NCSI_CFGID7p2_Quad_ASPM-OFF_0.02_8000F39B.bin.
+	b. Included PXE + EFI OROM from PXE3534.
+	c. Using nvmupdate64e from 9.40 release.
+
+5a) STGi4S4A_NUP (12/1/2022)
+	a. Modified map files to change SMC revision word 0x15 to 0400h to match with NVM image and production LAN package.
+
+5) STGi4S4A_NUP (10/21/2022)
+	a. v9.00 firmware SMC_AOC-STG-i4S_XL710_9p00_SFI_NCSI_CFGID7p2_Quad_ASPM-OFF_0.00_8000D2AB.bin from IPS 00726018.
+	b. Included PXE + EFI OROM from PXE3256.
+	c. Using nvmupdate64e from 700Series_NVMUpdatePackage_v9_00.
+
+4) STGi4S40_NUP (1/20/2022)
+	a. LAN NVM update package firmware v8.50 (ETrackID 8000BE9A) from IPS 00675173.
+	b. UEFI, Linux, and ESXi versions.
+	c. Included BootIMG.FLB PXE + EFI OROM from PXE3082.
+	d. Port order 3-2-0-1 with timestamp.	
+
+3) STGi4S3C_NUP (5/3/2021)
+	a. LAN NVM update package firmware v8.30 (ETrackID 8000A975).
+	b. UEFI, Linux, and ESXi versions. 
+	c. Included BootIMG.FLB PXE + EFI OROM from PXE2926.
+	d. Port order 3-2-0-1 with timestamp.
+	e. Setting changes:	
+		0x15 : 030C				;LAN EEPROM Revision
+		0xCDD : 15D9				;SVID
+		0xCDE, 0x67FA, 0xC4D, 0xC6B : 087E	;SSID
+		0x2C : FFF7				;WOL
+		0xCEA : 0001				;Enable VPD capability
+		0x1128 - 0x1146 : 3-2-0-1		;PFGEN_PORTNUM 3-2-0-1
+		0xF0A - 0xF28 : 3-2-0-1			;PFGEN_PORTMDIO_NUM 3-2-0-1
+		0xDA7 -  0xDC5 : 3-2-0-1		;PFGEN_PORTNUM_CAR 3-2-0-1
+		0x6358- 0x635E : 2-3-1-0		;PRTGL_SAH 2-3-1-0
+		0x6479 - 0x647F : 2-3-1-0		;PRTTSYN_CTL0 2-3-1-0
+		0xD3C : 4081, 0xD3E : 4080, 0xD40 : 4082, 0xD42 : 4083  ;LED GLGEN_GPIO_CTL ports
+		0xD68 : C081, 0xD6A : 3081, 0xD6C : C080, 0xD6E : 3080	;LED
+		0xD70 : C082, 0xD72 : 3082, 0xD74 : C083, 0xD76 : 3083	;LED
+		0x14009 : 1113				;Set both network to BMC and OS2BMC traffics for port 0
+		0x1400D : 80A6				;OS2BMC CRC
+
+2) STGi4S3B_NUP (12/10/2020)
+	a. LAN NVM update package firmware v7.20 (ETrackID 80009A5F).
+	b. UEFI, Linux, and ESXi versions. 
+	c. Included BootIMG.FLB PXE + EFI OROM from PXE2585.
+	d. Port order 3-2-0-1 with timestamp.
+
+1a) STGi4S3A1_NUP (12/4/2020)
+	a. Added Linux version. 
+
+1) STGi4S3A_NUP (6/11/2020)
+	a. Customer LAN NVM update package UEFI version.
+	b. Firmware v7.20 (ETrackID 800082B7). 
+	c. Included PXE + EFI OROM from PXE2585.
+	d. --- Port order 3-2-0-1 with timestamp --- . 
