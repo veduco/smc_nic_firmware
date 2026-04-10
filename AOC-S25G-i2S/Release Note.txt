@@ -1,0 +1,55 @@
+COMMENTS:
+1. LAN NVM update package for AOC-S25G-i2S using XXV710 and supports NCSI.
+2. See Instruction.txt. 
+
+EEPROM REVISION INFO:
+7a) S25G2S40_NUP (11/15/2022)
+	a. Modified map files to change SMC revision word 0x15 to 030Ch to match with NVM image and production LAN package.
+
+7) S25G2S40_NUP (10/21/2022)
+	a. v9.00 firmware SMC_AOC-S25G-i2S_9p00_SFP28_MCP_NCSI_CFGID12p_ASPM-OFF_0.00_8000D298.bin from IPS 00726018.
+	b. Included PXE + EFI OROM from PXE3256.
+	c. Using nvmupdate64e from 700Series_NVMUpdatePackage_v9_00.
+
+6a) S25G2S3C_1_NUP (1/18/2022)
+	a. Modified to force update when updating the same firmware version. 
+
+6) S25G2S3C_NUP (10/27/2021)
+	a. Based on Intel SMC_XXV710_MCP_8p50_SFP28_NCSI_CFGID12p_ASPM_Off_PXEFIXPAE_8000B8B2.bin from IPS 00655436. 
+	b. Included PXE3082.
+
+5) S25G2S3B_NUP (10/20/2021)
+	a. Based on Intel SMC_XXV710_MCP_8p40_SFP28_NCSI_CFGID12p_ASPM_Off_PXEFIXPAE_8000B882.bin from IPS 00652561.
+	b. Included PXE2992.
+
+4) S25G2S3A_NUP (8/5/2021) No port swap NVM
+	a. Based on Intel SMC_SFP28_MCP_8p30_DP_8MB_NoSwap_ASPMoff_PXEFIXPAE_8000B31A.bin from IPS 00597028
+	b. Included PXE2926.
+
+3a) S25G2S30_NUP (7/13/2021)
+	a. Overwrite pointer in map file: 0x4F 0x07 (from IPS 00623005) to fix update from v7.20.
+	b. "Skipping update minimum security revisions" message can be ignored. 
+
+3) S25G2S30_NUP (6/11/2021)
+	a. Firmware v8.30 SMC_SFP28_MCP_8p30_DP_8MB_PFSwap_ASPMoff_PXEFIXPAE_8000A9B6.bin from IPS 00597028
+	b. Included PXE + EFI OROM from PXE2926.
+
+2a) S25G2S2C_NUP (11/3/2020)
+	a. SMC_XXV710_MCP_7p30_SFP28_NCSI_CFGID12p_ASPM_Off_PXEFIXPAE_800096DA from IPS 00556129. 
+		- Fixed incorrect firmware version in Linux. 
+
+2) S25G2S2C_NUP (10/29/2020)
+	a. Customer LAN NVM update package UEFI and Linux versions.
+	b. Firmware v7.30 (SMC_XXV710_MCP_7p30_SFP28_NCSI_CFGID12p_ASPM_Off_PXEFIXPAE_800096C8) from IPS 00552289.
+	c. Included PXE + EFI OROM from PXE2585.
+	d. NCSI Package ID 0.
+	e. nvmupdate tool from software release v25.1.
+	d. Windows OS driver v25.1 and Linux OS v2.11.29 needs to be used with F/W version. 
+
+1) S25G2S2B2_NUP (10/22/2020) - Package ID = 0. 
+	a. Customer LAN NVM update package UEFI and Linux versions.
+	b. Firmware v7.20 (SMC_XXV710_MCP_7p20_SFP28_NCSI_CFGID12p_ASPM_Off_PXEFIXPAE_800082B3).
+	c. Included PXE + EFI OROM from PXE2585.
+	d. Set NCSI Package ID back to 0.
+	e. nvmupdate tool from software release v25.0.
+	d. Remmber to update Windows OS driver to v25.0 and Linux OS to v2.10.19.82. 
